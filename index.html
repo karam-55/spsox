@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>مشغل الصوت البسيط</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="player.css" rel="stylesheet" />
+    <title>SPS Player Web</title>
+
+    <style>
+       .xdContainer{
+         height: 400px;
+         width: 100%;
+         background-color: #000;
+    position: relative;
+       }
+    </style>
 </head>
+
 <body>
-    <div>
-        <audio controls>
-            <source src="OD2e_L1_Student_Book_Audio_1.02.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
+
+  <!-- Video Player Container -->
+  <div class="xdContainer">
+
+        <video class="xdPlayer" 
+        width="100%" 
+        height="100%"
+        preload="auto"
+        poster="" > 
+        <source src="20240429_183922.mp4"  type="video/mp4" />
+            <!-- You Can Also Add Other Video Formet Source -->
+          </video>
+  <!-- Video Player Container End -->
+ </div>
+ <p class="co">T.Wassim Akel</p>
+ <div class="cp"> <img src="SPS_LOGO.png" alt="" >
+ </div>
+
+    <script src="player.js"></script>
 </body>
 </html>
